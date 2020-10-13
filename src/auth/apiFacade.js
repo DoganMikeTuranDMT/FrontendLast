@@ -70,7 +70,7 @@ class ApiFacade {
       "Content-Type": "application/json"
     };
     return new Promise((resolve, reject) => {
-      fetch("https://tozophoto.azurewebsites.net/api/login", {
+      fetch("https://focusfoto.azurewebsites.net/api/login", {
         method: "POST",
         headers: headers,
         body: JSON.stringify({
@@ -105,7 +105,7 @@ class ApiFacade {
     };
 
     return new Promise((resolve, reject) => {
-      fetch("https://tozophoto.azurewebsites.net/api/" + endpoint, {
+      fetch("https://focusfoto.azurewebsites.net/api/" + endpoint, {
         method: "GET",
         headers: headers
       })
@@ -127,7 +127,7 @@ class ApiFacade {
     };
 
     return new Promise((resolve, reject) => {
-      fetch("https://tozophoto.azurewebsites.net/api/" + endpoint, {
+      fetch("https://focusfoto.azurewebsites.net/api/" + endpoint, {
         method: "DELETE",
         headers: headers
       })

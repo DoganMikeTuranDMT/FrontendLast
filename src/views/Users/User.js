@@ -117,7 +117,7 @@ setCount(a);
       
   }
   await axios.post(
-    "https://localhost:5001/api/image",
+    "https://focusfoto.azurewebsites.net/api/image",
     
     listOfPublicId
     
