@@ -1,0 +1,23 @@
+#page-container {
+    position: relative;
+    min-height: 90vh;
+  }
+  #page-container-user {
+    position: relative;
+    min-height: 74vh;
+  }
+  #page-container-user-with-foto {
+    position: relative;
+    min-height: 30vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
