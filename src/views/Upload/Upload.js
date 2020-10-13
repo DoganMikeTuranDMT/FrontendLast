@@ -54,7 +54,7 @@ function Upload(props){
    if(files.length > 0){
        setFilesLength(files)
     const temp_passres = await axios.post(
-        "https://tozophoto.azurewebsites.net/api/temppass",
+        "https://focusfoto.azurewebsites.net/api/temppass",
         {
           custname: custname,
           custemail: custemail,
@@ -64,7 +64,7 @@ function Upload(props){
       ); 
       console.log(`${localStorage.getItem("companyname")}`)
         
-      setTempcode("https://focus-foto.azureedge.net/users/" + temp_passres.data.tempPassword)
+      setTempcode("https://focusfoto.azureedge.net/users/" + temp_passres.data.tempPassword)
       
         for (var i=0; i < files.length; i++) {
             data.append('file', files[i])
@@ -83,7 +83,7 @@ function Upload(props){
             console.log(file.public_id)
         setImage(file.secure_url)
         await axios.post(
-            "https://tozophoto.azurewebsites.net/api/imagetemppass",
+            "https://focusfoto.azurewebsites.net/api/imagetemppass",
             {
             imagelink: file.secure_url,
             originalfilename: file.original_filename +"."+ file.format,
